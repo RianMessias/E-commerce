@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrinho de Compras - Granada</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header>
+    <h1 class="logo">Granada</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="produtos.html">Produtos</a>
+      <a href="contato.html">Contato</a>
+      <a href="carrinho.html" class="active">Carrinho</a>
+    </nav>
+  </header>
+
+  <!-- Carrinho -->
+  <div class="carrinho-container" id="carrinhoContainer">
+    <div class="carrinho-header">
+      <h2>Seu Carrinho</h2>
+      <button class="close-btn" id="closeCarrinho">X</button>
+    </div>
+
+    <div class="cart-products" id="cartProducts">
+      <!-- Produtos do carrinho serão injetados aqui pelo JS -->
+    </div>
+
+    <div class="cart-total">
+      <span>Total: R$ <span id="totalValue">0,00</span></span>
+      <button class="checkout-btn" id="checkoutBtn">Finalizar Compra</button>
+    </div>
+  </div>
+
+  <button class="open-cart-btn" id="openCartBtn">Abrir Carrinho</button>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

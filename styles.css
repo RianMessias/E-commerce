@@ -1,0 +1,393 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #111;
+  color: #fff;
+  line-height: 1.6;
+  padding: 0;
+  margin: 0;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #222;
+  padding: 20px 10px;
+  text-align: center;
+  border-bottom: 2px solid #444;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+header nav {
+  margin-top: 10px;
+}
+
+header nav a {
+  margin: 0 20px;
+  color: #fff;
+  font-size: 1.1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+header nav a:hover {
+  color: #4a00e0; /* Roxo */
+}
+
+/* Banner */
+.banner {
+  background: linear-gradient(45deg, #4a00e0, #8000ff);
+  color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.banner-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.banner-content p {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.banner-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 30px;
+  background-color: #fff;
+  color: #4a00e0;
+  text-decoration: none;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.banner-btn:hover {
+  background-color: #4a00e0;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Seção de Destaques */
+.highlights {
+  margin: 50px 0;
+  text-align: center;
+}
+
+.highlights h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.highlights p {
+  color: #aaa;
+  margin-bottom: 40px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin: 0 20px;
+}
+
+.product {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.product img {
+  max-width: 80%;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.product img:hover {
+  transform: scale(1.05);
+}
+
+.product-info h3 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.product-info p {
+  font-size: 1rem;
+  color: #aaa;
+  margin: 10px 0;
+}
+
+.product-info button {
+  margin-top: 15px;
+  padding: 12px 25px;
+  background-color: #4a00e0; /* Roxo */
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.product-info button:hover {
+  background-color: #333; /* Preto */
+  transform: scale(1.05);
+}
+
+/* Seção de Benefícios */
+.benefits {
+  background-color: #222;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.benefits h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.benefits ul {
+  list-style: none;
+  padding: 0;
+}
+
+.benefits li {
+  font-size: 1.2rem;
+  color: #aaa;
+  margin: 10px 0;
+}
+
+.benefits li::before {
+  content: '✔️';
+  margin-right: 10px;
+  color: #4a00e0;
+}
+
+/* Seção de Depoimentos */
+.testimonials {
+  margin: 50px 0;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.testimonial {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.testimonial p {
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+.testimonial span {
+  display: block;
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #aaa;
+}
+
+/* Formulário de Contato */
+.contact-form {
+  background-color: #222;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  font-size: 1.1rem;
+  color: #fff;
+  display: block;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #444;
+  background-color: #333;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  padding: 12px 20px;
+  background-color: #4a00e0; /* Roxo */
+  color: #fff;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #333;
+  transform: scale(1.05);
+}
+
+/* Rodapé */
+footer {
+  background-color: #222;
+  padding: 20px;
+  text-align: center;
+  color: #aaa;
+  border-top: 2px solid #444;
+}
+
+footer a {
+  color: #4a00e0; /* Roxo */
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Carrinho */
+.carrinho-container {
+  display: none; /* Inicialmente escondido */
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #222;
+  width: 30%;
+  height: 100%;
+  padding: 20px;
+  z-index: 1000;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.5);
+  font-family: 'Poppins', sans-serif; /* Adicionando a fonte */
+}
+
+.carrinho-container.open {
+  display: block;
+}
+
+.carrinho-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.carrinho-header h2 {
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.close-btn {
+  background-color: #4a00e0;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.close-btn:hover {
+  background-color: #333;
+}
+
+/* Produtos do Carrinho */
+.cart-products {
+  margin-top: 20px;
+}
+
+.cart-product {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.cart-product img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.cart-product-info h3 {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.cart-product-info p {
+  font-size: 1rem;
+  color: #aaa;
+}
+
+.remove-btn {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: auto;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.remove-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Total */
+.cart-total {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.cart-total span {
+  font-weight: bold;
+  color: #4a00e0;
+}

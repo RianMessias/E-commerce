@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - E-commerce de Roupas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <h1>Granada</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="produtos.html">Produtos</a>
+      <a href="contato.html">Contato</a>
+      <a href="carrinho.html">Carrinho</a>
+    </nav>
+  </header>
+
+  <!-- Seção de Contato -->
+  <section class="contact">
+    <h2>Entre em Contato</h2>
+    <p>Tem alguma dúvida ou quer saber mais sobre nossos produtos? Preencha o formulário abaixo:</p>
+    
+    <form action="#" method="POST" class="contact-form">
+      <div class="form-group">
+        <label for="name">Nome</label>
+        <input type="text" id="name" name="name" placeholder="Seu nome completo" required>
+      </div>
+      <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Mensagem</label>
+        <textarea id="message" name="message" rows="5" placeholder="Digite sua mensagem aqui..." required></textarea>
+      </div>
+      <button type="submit">Enviar Mensagem</button>
+    </form>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2024 GRANADA. Todos os direitos reservados.</p>
+    <a href="#topo">Voltar ao topo</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

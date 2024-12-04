@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Granada - Produtos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Granada</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="produtos.html">Produtos</a>
+      <a href="contato.html">Contato</a>
+      <a href="carrinho.html">Carrinho</a>
+    </nav>
+  </header>
+
+  <section class="products-section">
+    <h2>Explore nossos Produtos</h2>
+    <p>Confira nossas últimas novidades e tendências:</p>
+
+    <div class="products">
+      <!-- Produto 1 -->
+      <div class="product">
+        <img src="https://via.placeholder.com/250/444444/FFFFFF?text=Camiseta" alt="Camiseta Básica" class="product-image">
+        <div class="product-info">
+          <h3>Camiseta Básica</h3>
+          <p>R$ 49,90</p>
+          <button class="add-to-cart" onclick="addToCart('Camiseta Básica', 49.90, 'https://via.placeholder.com/250/444444/FFFFFF?text=Camiseta')">Adicionar ao Carrinho</button>
+        </div>
+      </div>
+
+      <!-- Produto 2 -->
+      <div class="product">
+        <img src="https://via.placeholder.com/250/444444/FFFFFF?text=Calça" alt="Calça Jeans" class="product-image">
+        <div class="product-info">
+          <h3>Calça Jeans</h3>
+          <p>R$ 99,90</p>
+          <button class="add-to-cart" onclick="addToCart('Calça Jeans', 99.90, 'https://via.placeholder.com/250/444444/FFFFFF?text=Calça')">Adicionar ao Carrinho</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 GRANADA. Todos os direitos reservados.</p>
+    <a href="#topo">Voltar ao topo</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
